@@ -90,7 +90,7 @@ export const Hero = () => {
               <img 
                 src="https://media.licdn.com/dms/image/v2/D4D03AQEhkl5RRs34XQ/profile-displayphoto-shrink_200_200/B4DZbGf309GUAY-/0/1747086966860?e=1773273600&v=beta&t=NBQmHKkCyCiY2PByaLKwoUBkbpsdm69fHnPRcHi2oYI" 
                 alt="Guilherme Gonçalves"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover greenscale hover:greenscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
               />
             </div>
