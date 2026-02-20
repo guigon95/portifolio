@@ -88,7 +88,8 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl animate-pulse" />
             <div className="relative w-full h-full rounded-full border-2 border-white/10 overflow-hidden bg-white/5">
               <img 
-                src="https://raw.githubusercontent.com/guigon95/portifolio/master/src/img/guilherme-linkedin-perfil.jpg"                alt="Guilherme Gonçalves"
+                src="src/img/guilherme-linkedin-perfil.jpg"                
+                alt="Guilherme Gonçalves"
                 className="w-32 sm:w-40 md:w-52 lg:w-64
                   h-auto
                   object-cover
