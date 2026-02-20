@@ -69,7 +69,7 @@ export const Hero = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="mailto:placeholder@email.com" 
+                href="mailto:guilherme_gon@live.com" 
                 className="p-4 rounded-full border border-white/10 hover:bg-white/5 transition-colors"
               >
                 <Mail size={20} />
@@ -90,8 +90,7 @@ export const Hero = () => {
               <img 
                 src="https://media.licdn.com/dms/image/v2/D4D03AQEhkl5RRs34XQ/profile-displayphoto-shrink_200_200/B4DZbGf309GUAY-/0/1747086966860?e=1773273600&v=beta&t=NBQmHKkCyCiY2PByaLKwoUBkbpsdm69fHnPRcHi2oYI" 
                 alt="Guilherme Gonçalves"
-                className="w-full h-full object-cover greenscale hover:greenscale-0 transition-all duration-700"
-                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover hue-rotate-90 saturate-150 hover:hue-rotate-0 hover:saturate-100 transition-all duration-700"                referrerPolicy="no-referrer"
               />
             </div>
           </div>
