@@ -4,7 +4,7 @@ import { Mail, Linkedin, Copy, Check, ArrowUpRight } from 'lucide-react';
 
 export const Contact = () => {
   const [copied, setCopied] = useState(false);
-  const email = "guilherme.gon@example.com";
+  const email = "guilherme_gon@live.com";
 
   const copyEmail = () => {
     navigator.clipboard.writeText(email);

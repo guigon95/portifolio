@@ -88,7 +88,7 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl animate-pulse" />
             <div className="relative w-full h-full rounded-full border-2 border-white/10 overflow-hidden bg-white/5">
               <img 
-                src="https://picsum.photos/seed/guilherme-hero/600/600" 
+                src="../img/guilherme-linkedin-perfil.jpg" 
                 alt="Guilherme Gonçalves"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
