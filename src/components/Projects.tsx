@@ -4,25 +4,20 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: "Sistema de Liquidação Financeira",
-    category: "Fintech / Backend",
-    description: "Motor de liquidação de alta performance processando milhões de transações diárias com consistência eventual e garantias de ACID.",
-    tech: ["Kotlin", "Spring Boot", "Kafka", "PostgreSQL", "Redis"],
-    image: "https://picsum.photos/seed/finance/800/600"
+    title: "Registro e Liquidação de Renda Fixa",
+    category: "Infraestrutura de Mercado / B3",
+    description: "Desenvolvimento e modernização de sistemas críticos para o mercado de capitais, focando em registro de ativos e liquidação financeira de alta performance com arquitetura resiliente.",
+    tech: ["Java", "Spring Boot", "PL/SQL", "Redis", "Azure", "Kubernetes", "Kafka", "Clean Arch"],
+    image: "https://picsum.photos/seed/stockmarket/800/600",
+    link: "https://www.b3.com.br/pt_br/regulacao/estrutura-normativa/regulamentos-e-manuais/registro-e-liquidacao.htm"
   },
   {
-    title: "Plataforma de Recomendação",
-    category: "E-commerce / AI",
-    description: "Arquitetura de microsserviços para recomendação em tempo real baseada em comportamento do usuário e telemetria.",
-    tech: ["Java", "AWS Lambda", "DynamoDB", "Python", "SQS"],
-    image: "https://picsum.photos/seed/recomm/800/600"
-  },
-  {
-    title: "Telemetria de Frotas",
-    category: "IoT / Logistics",
-    description: "Sistema de ingestão de dados em tempo real para monitoramento de frotas, utilizando padrões de resiliência para lidar com picos de carga.",
-    tech: ["Kotlin", "AWS IoT", "TimescaleDB", "Kafka", "Docker"],
-    image: "https://picsum.photos/seed/fleet/800/600"
+    title: "Telemetria e Gestão de Frotas",
+    category: "IoT / Logística / Trimble",
+    description: "Sistema escalável para monitoramento de frotas em tempo real, processando grandes volumes de dados de telemetria para otimização logística e gestão de ativos.",
+    tech: ["Kotlin", "Java", "Spring Boot", "Kafka", "AWS", "JUnit", "Microsserviços"],
+    image: "https://picsum.photos/seed/trucks/800/600",
+    link: "https://onps.com/en/solutions"
   }
 ];
 
@@ -35,7 +30,7 @@ export const Projects = () => {
           <h3 className="text-4xl md:text-5xl font-bold tracking-tight">Projetos em Destaque</h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -52,13 +47,15 @@ export const Projects = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <button className="p-3 rounded-full bg-white text-black hover:bg-accent transition-colors">
-                    <ExternalLink size={20} />
-                  </button>
-                  <button className="p-3 rounded-full bg-white text-black hover:bg-accent transition-colors">
-                    <Github size={20} />
-                  </button>
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="p-4 rounded-full bg-white text-black hover:bg-accent transition-colors flex items-center gap-2 font-bold"
+                  >
+                    Ver Projeto <ExternalLink size={18} />
+                  </a>
                 </div>
               </div>
               
